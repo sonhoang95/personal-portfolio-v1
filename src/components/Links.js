@@ -10,10 +10,10 @@ import {
 export default function Links() {
   return (
     <div className="flex flex-col-reverse lg:flex-row justify-center items-center lg:justify-between lg:items-end w-3/4 mx-auto lg:w-full ">
-      <p className="text-xs font-light tracking-widest opacity-80">
+      <p className="text-xs font-light text-center lg:text-left tracking-widest opacity-80">
         © 2020 - 2021 Son Nguyen. All Rights Reserved.
       </p>
-      <div className="space-x-6 uppercase">
+      <div className="lg:space-x-6 uppercase">
         <NavLink
           className="hidden lg:inline-block text-sm tracking-wider font-semibold hover:text-accent"
           activeClassName="text-accent"
@@ -36,7 +36,7 @@ export default function Links() {
         >
           Portfolio
         </NavLink>
-        <div className="flex items-center gap-6 justify-end mt-0  mb-8 lg:mb-0 lg:mt-8">
+        <div className="flex items-center gap-6 justify-center lg:justify-end mt-0  mb-8 lg:mb-0 lg:mt-8">
           <a
             href="https://github.com/sonhoang95"
             target="_blank"

@@ -4,10 +4,10 @@ import pluralgroceries from "../images/plural-demo.png"
 
 export default function PluralGroceries() {
   return (
-    <div className="space-y-20">
+    <div className="space-y-10">
       <div className="text-center space-x-4 capitalize">
         {/* <!-- heading --> */}
-        <h1 class="mb-8 text-5xl lg:text-6xl font-extrabold tracking-wide">
+        <h1 class="mb-8 text-3xl lg:text-6xl font-extrabold tracking-wide">
           <span
             class="
                 text-transparent
@@ -27,16 +27,17 @@ export default function PluralGroceries() {
                 to-purple-500
               "
           >
-            Groceries />
+            {`Groceries />`}
           </span>
         </h1>
-        <a
-          className="
+        <div className="flex flex-col lg:flex-row w-11/12 lg:w-full mx-auto">
+          <a
+            className="
           text-sm lg:text-base
               inline-block
-     mb-8
+     mb-4 lg:mb-8
         
-             px-5 py-2
+             px-3 lg:px-5 py-1 lg:py-2
               rounded
               bg-gradient-to-br
               from-yellow-300
@@ -51,19 +52,19 @@ export default function PluralGroceries() {
               tracking-wide
               transition-all
               duration-500"
-          href="https://youtu.be/0gdPnJzWARY"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          video demo
-        </a>
-        <a
-          className="
+            href="https://youtu.be/0gdPnJzWARY"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            video demo
+          </a>
+          <a
+            className="
           text-sm lg:text-base
               inline-block
-     mb-8
+     mb-4 lg:mb-8
         
-             px-5 py-2
+     px-3 lg:px-5 py-1 lg:py-2
               rounded
               bg-gradient-to-br
               from-yellow-300
@@ -78,19 +79,19 @@ export default function PluralGroceries() {
               tracking-wide
               transition-all
               duration-500"
-          href="https://plural-groceries.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          live site
-        </a>
-        <a
-          className="
+            href="https://plural-groceries.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            live site
+          </a>
+          <a
+            className="
           text-sm lg:text-base
               inline-block
-     mb-8
+     mb-8 lg:mb-8
         
-             px-5 py-2
+     px-3 lg:px-5 py-1 lg:py-2
               rounded
               bg-gradient-to-br
               from-yellow-300
@@ -105,12 +106,13 @@ export default function PluralGroceries() {
               tracking-wide
               transition-all
               duration-500"
-          href="https://github.com/sonhoang95/plural-groceries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          source code
-        </a>
+            href="https://github.com/sonhoang95/plural-groceries"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            source code
+          </a>
+        </div>
         <div className="flex gap-4 justify-center items-center">
           <p className="border-b-2 border-accent">technologies:</p>
           <FaReact className="w-10 h-10 text-sky-600 dark:text-sky-400" />
@@ -121,8 +123,8 @@ export default function PluralGroceries() {
       <div className="relative space-y-4 lg:space-y-0">
         <p
           className="   lg:absolute
-                top-0
-                right-0
+                lg:top-0
+                lg:right-0
                 lg:transform
                 lg:translate-x-4
                 lg:-translate-y-4

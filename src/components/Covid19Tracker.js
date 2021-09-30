@@ -5,10 +5,10 @@ import covid19tracker from "../images/covid19-demo-1.png"
 
 export default function Covid19Tracker() {
   return (
-    <div className="space-y-20 mb-24">
+    <div className="space-y-10 mb-24">
       <div className="text-center space-x-4 capitalize">
         {/* <!-- heading --> */}
-        <h1 class="mb-8 text-5xl lg:text-6xl font-extrabold tracking-wide">
+        <h1 class="mb-8 text-3xl lg:text-6xl font-extrabold tracking-wide">
           <span
             class="
                 text-transparent
@@ -28,16 +28,17 @@ export default function Covid19Tracker() {
                 to-purple-500
               "
           >
-            Live Tracker />
+            {`Live Tracker />`}
           </span>
         </h1>
-        <a
-          className="
+        <div className="flex flex-col lg:flex-row w-11/12 lg:w-full mx-auto">
+          <a
+            className="
           text-sm lg:text-base
               inline-block
-     mb-8
+     mb-4 lg:mb-8
         
-             px-5 py-2
+             px-3 lg:px-5 py-1 lg:py-2
               rounded
               bg-gradient-to-br
               from-yellow-300
@@ -52,19 +53,19 @@ export default function Covid19Tracker() {
               tracking-wide
               transition-all
               duration-500"
-          href="https://youtu.be/zttHG4ymHig"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          video demo
-        </a>
-        <a
-          className="
+            href="https://youtu.be/zttHG4ymHig"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            video demo
+          </a>
+          <a
+            className="
           text-sm lg:text-base
               inline-block
-     mb-8
+     mb-4 lg:mb-8
         
-             px-5 py-2
+     px-3 lg:px-5 py-1 lg:py-2
               rounded
               bg-gradient-to-br
               from-yellow-300
@@ -79,19 +80,19 @@ export default function Covid19Tracker() {
               tracking-wide
               transition-all
               duration-500"
-          href="https://covid19-live-tracking-app.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          live site
-        </a>
-        <a
-          className="
+            href="https://covid19-live-tracking-app.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            live site
+          </a>
+          <a
+            className="
           text-sm lg:text-base
               inline-block
-     mb-8
+     mb-4 lg:mb-8
         
-             px-5 py-2
+     px-3 lg:px-5 py-1 lg:py-2
               rounded
               bg-gradient-to-br
               from-yellow-300
@@ -106,12 +107,13 @@ export default function Covid19Tracker() {
               tracking-wide
               transition-all
               duration-500"
-          href="https://github.com/sonhoang95/covid19-live-tracker"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          source code
-        </a>
+            href="https://github.com/sonhoang95/covid19-live-tracker"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            source code
+          </a>
+        </div>
         <div className="flex gap-4 justify-center items-center">
           <p className="border-b-2 border-accent">technologies:</p>
           <FaReact className="w-10 h-10 text-sky-600 dark:text-sky-400" />

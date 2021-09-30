@@ -10,7 +10,7 @@ export default function Content() {
           <h2 className="text-2xl lg:text-3xl font-bold text-accent mb-8">
             A Purpose
           </h2>
-          <p>
+          <p className="text-sm">
             I made this website because I want to not only solidify my{" "}
             <span className="font-bold text-primary">
               web development skills with
@@ -23,18 +23,18 @@ export default function Content() {
               </span>
             </span>
           </p>
-          <p>
+          <p className="text-sm">
             I really got to apply everything I have learned in this website,
             from planning, designing, developing, launching to maintaining. My
             goal with this site (and journal) is to continue learning web
-            development and learn publicly. For sure, there are other things
+            development and learn publicity. For sure, there are other things
             that I have yet to encounter, but I’m ready{" "}
             <strong className="text-teal-500 italic">
               to learn, continue to challenge myself, and do interesting things
               that matter.
             </strong>{" "}
           </p>
-          <p>
+          <p className="text-sm">
             This also serves a motivation for me to continue making projects
             because now I finally have a place to showcase them and share my
             learning process with everyone.
@@ -47,7 +47,7 @@ export default function Content() {
             What Else?
           </h2>
 
-          <p>
+          <p className="text-sm">
             When I’m not programming , I endlessly browse{" "}
             <a
               className="text-blue-500 hover:underline hover:text-blue-400"

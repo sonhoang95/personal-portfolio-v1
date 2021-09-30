@@ -15,7 +15,7 @@ export default function About({ title }) {
         <header>
           <Header />
         </header>
-        <main className="container flew-grow max-w-screen-lg px-5 pb-32 m-auto mt-16 sm:px-12 md:px-20">
+        <main className="container flew-grow max-w-screen-lg px-5 pb-32 mx-auto mt-16 sm:px-12 md:px-20">
           <Main />
         </main>
         <footer>
