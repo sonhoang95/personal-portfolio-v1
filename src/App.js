@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
+import ScrollToTop from "./ScrollToTop"
+import About from "./pages/About"
+import Home from "./pages/Home"
+import Portfolio from "./pages/Portfolio"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Router>
+        <ScrollToTop />
+        <Switch>
+          <Route exact path="/">
+            <Home title="Son Nguyen | Personal Website" />
+          </Route>
+          <Route path="/about">
+            <About title="About | Son Nguyen" />
+          </Route>
+          <Route path="/portfolio">
+            <Portfolio title="Portfolio | Son Nguyen" />
+          </Route>
+        </Switch>
+      </Router>
+    </>
+  )
 }
 
-export default App;
+export default App
