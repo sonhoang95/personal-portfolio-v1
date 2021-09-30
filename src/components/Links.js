@@ -32,7 +32,7 @@ export default function Links() {
         <NavLink
           className="hidden lg:inline-block text-sm tracking-wider font-semibold hover:text-accent"
           activeClassName="text-accent"
-          to="/projects"
+          to="/portfolio"
         >
           Portfolio
         </NavLink>
