@@ -7,7 +7,7 @@ export default function PluralGroceries() {
     <div className="space-y-10">
       <div className="text-center space-x-4 capitalize">
         {/* <!-- heading --> */}
-        <h1 class="mb-8 text-3xl lg:text-6xl font-extrabold tracking-wide">
+        <h1 class="mb-8 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-wide">
           <span
             class="
                 text-transparent
@@ -30,7 +30,7 @@ export default function PluralGroceries() {
             {`Groceries />`}
           </span>
         </h1>
-        <div className="flex flex-col lg:flex-row w-11/12 lg:w-full mx-auto">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-center lg:flex-row lg:items-center lg:justify-center md:gap-4 lg:gap-4 w-11/12 lg:w-full mx-auto">
           <a
             className="
           text-sm lg:text-base
