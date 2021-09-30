@@ -7,9 +7,9 @@ export default function PluralGroceries() {
     <div className="space-y-10">
       <div className="text-center space-x-4 capitalize">
         {/* <!-- heading --> */}
-        <h1 class="mb-8 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-wide">
+        <h1 className="mb-8 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-wide">
           <span
-            class="
+            className="
                 text-transparent
                 bg-gradient-to-r bg-clip-text
                 from-teal-400
@@ -19,7 +19,7 @@ export default function PluralGroceries() {
             {`<Plural`}
           </span>
           <span
-            class="
+            className="
                 text-transparent
                 bg-gradient-to-r bg-clip-text
                 from-teal-500
@@ -30,7 +30,7 @@ export default function PluralGroceries() {
             {`Groceries />`}
           </span>
         </h1>
-        <div className="flex flex-col md:flex-row md:items-center md:justify-center lg:flex-row lg:items-center lg:justify-center md:gap-4 lg:gap-4 w-11/12 lg:w-full mx-auto">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-center lg:flex-row lg:items-center lg:justify-center md:gap-4 lg:gap-4 w-11/12 md:w-full lg:w-full mx-auto mb-4 lg:mb-0">
           <a
             className="
           text-sm lg:text-base
@@ -89,7 +89,7 @@ export default function PluralGroceries() {
             className="
           text-sm lg:text-base
               inline-block
-     mb-8 lg:mb-8
+     mb-4 lg:mb-8
         
      px-3 lg:px-5 py-1 lg:py-2
               rounded
