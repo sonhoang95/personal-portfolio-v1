@@ -27,7 +27,7 @@ export default function Content() {
             I really got to apply everything I have learned in this website,
             from planning, designing, developing, launching to maintaining. My
             goal with this site (and journal) is to continue learning web
-            development and learn publicity. For sure, there are other things
+            development and learning publicly. For sure, there are other things
             that I have yet to encounter, but I’m ready{" "}
             <strong className="text-teal-500 italic">
               to learn, continue to challenge myself, and do interesting things

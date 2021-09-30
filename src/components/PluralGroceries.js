@@ -128,15 +128,15 @@ export default function PluralGroceries() {
                 lg:transform
                 lg:translate-x-4
                 lg:-translate-y-4
-                bg-pink-100
+                bg-yellow-100
                 text-left
                 py-4
                 px-8
                
                 rounded
                 shadow-lg
-                text-pink-900
-                border-t-4 border-pink-500"
+                text-yellow-800
+                border-t-4 border-yellow-500"
         >
           PluralGroceries is an online supermarket that allows users to browse,
           add items to cart and checkout with Stripe.
