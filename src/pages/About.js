@@ -12,9 +12,8 @@ export default function About({ title }) {
   return (
     <>
       <div className="flex flex-col min-h-screen bg-primary text-primary transition-colors duration-300">
-        <header>
-          <Header />
-        </header>
+        <Header />
+
         <main className="container flew-grow max-w-screen-lg px-5 pb-32 mx-auto mt-16 sm:px-12 md:px-20">
           <Main />
         </main>
