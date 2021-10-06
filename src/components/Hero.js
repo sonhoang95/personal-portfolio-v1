@@ -20,7 +20,7 @@ export default function Hero() {
               </div>
             </h1>
 
-            <p className="text-secondary text-2xl md:text-3xl lg:text-3xl tracking-wide px-4 text-center lg:text-left leading-relaxed relative pl-0 pb-4">
+            <p className="text-secondary text-xl md:text-2xl lg:text-3xl tracking-wide px-4 text-center lg:text-left leading-relaxed relative pl-0 pb-4">
               "I'm{" "}
               <span
                 className="text-transparent bg-gradient-to-r  from-teal-500
@@ -90,9 +90,7 @@ export default function Hero() {
 
         <div className="relative">
           <div aria-hidden={true}>
-            <div className="relative lg:h-64 flex items-center justify-center">
-              <AvatarBackgroundGrid />
-            </div>
+            <AvatarBackgroundGrid />
           </div>
           <div className="absolute top-0 lg:right-6 flex items-center justify-center w-full h-full">
             <div className="border-4 border-accent rounded-full p-2">

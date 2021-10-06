@@ -27,7 +27,7 @@ export default function AvatarBackgroundGrid() {
       {/* <!--   grid background --> */}
       <div
         ref={gridContainerRef}
-        className="absolute inset-0 grid grid-cols-12 gap-2 transform -skew-y-6 scale-125"
+        className="absolute w-full h-full grid grid-cols-12 gap-2 transform -skew-y-6 scale-105 lg:scale-125"
       >
         {/* <!--     row 1 --> */}
         <div className="col-span-2 bg-gray-200 rounded-full p-2 dark:bg-gray-800 animate-pulse"></div>
