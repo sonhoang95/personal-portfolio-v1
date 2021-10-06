@@ -90,7 +90,7 @@ export default function Hero() {
 
         <div className="relative">
           <div aria-hidden={true}>
-            <div className="relative h-48 md:h-56 lg:h-64 flex items-center justify-center">
+            <div className="relative lg:h-64 flex items-center justify-center">
               <AvatarBackgroundGrid />
             </div>
           </div>
