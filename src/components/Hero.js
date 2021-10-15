@@ -1,11 +1,11 @@
-import React from "react"
-import AvatarBackgroundGrid from "./AvatarBackgroundGrid"
-import avatar from "../images/avatar.jpeg"
+import React from "react";
+import AvatarBackgroundGrid from "./AvatarBackgroundGrid";
+import avatar from "../images/avatar.jpeg";
 import {
   AiOutlineGithub,
   AiOutlineCodepen,
   AiFillLinkedin,
-} from "react-icons/ai"
+} from "react-icons/ai";
 
 export default function Hero() {
   return (
@@ -43,7 +43,7 @@ export default function Hero() {
           <div className="flex flex-col lg:flex-row items-center gap-8">
             <div>
               <a
-                href="https://drive.google.com/file/d/13Vo3ypsWGjQ5xhbvhNva2e12PRwmu1kB/view?usp=sharing"
+                href="https://drive.google.com/file/d/1q3Og4Klx14ZzQnnxdpyL4WgpTomubSQI/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block py-2 px-3 lg:py-2 lg:px-4 bg-gradient-to-br 
@@ -104,5 +104,5 @@ export default function Hero() {
         </div>
       </div>
     </>
-  )
+  );
 }
