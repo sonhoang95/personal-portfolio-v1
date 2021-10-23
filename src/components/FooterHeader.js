@@ -1,6 +1,6 @@
-import React from "react"
+import React from "react";
 
-export default function Header() {
+export default function FooterHeader() {
   return (
     <>
       <h1 className="text-lg lg:text-2xl font-bold tracking-widest border-b-4 text-gray-600 border-gray-300 dark:border-gray-400 dark:text-gray-200 uppercase ">
@@ -28,5 +28,5 @@ export default function Header() {
         </a>
       </p>
     </>
-  )
+  );
 }

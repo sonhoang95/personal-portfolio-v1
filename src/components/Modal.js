@@ -1,18 +1,33 @@
-import React from "react"
-import Popup from "reactjs-popup"
-import { FaTimes } from "react-icons/fa"
+import React from "react";
+import Popup from "reactjs-popup";
+import { FaTimes } from "react-icons/fa";
+import { motion } from "framer-motion";
 
-export default function Modal({ isDelay, validation, user }) {
+const buttonVariants = {
+  hover: {
+    scale: 1.05,
+    transition: {
+      duration: 0.4,
+      repeat: Infinity,
+      repeatType: "reverse",
+    },
+  },
+};
+
+export default function Modal({ isDelay, user }) {
   return (
     <div>
       <Popup
         trigger={
-          <button
+          <motion.button
+            variants={buttonVariants}
+            whileHover="hover"
+            whileFocus="hover"
             type="submit"
-            className="bg-gradient-to-r from-teal-500 to-blue-500 hover:from-blue-500 hover:to-teal-500 transition-all duration-500 py-2 rounded-lg capitalize text-lg lg:text-xl font-semibold tracking-wide text-gray-100 dark:text-gray-900 mb-12 lg:mb-20 w-full"
+            className="bg-gradient-to-r from-teal-500 to-blue-500  py-2 rounded-lg capitalize text-lg lg:text-xl font-semibold tracking-wide text-gray-100 dark:text-gray-900 mb-12 lg:mb-20 w-full"
           >
             say hello
-          </button>
+          </motion.button>
         }
         modal
       >
@@ -49,5 +64,5 @@ export default function Modal({ isDelay, validation, user }) {
           ))}
       </Popup>
     </div>
-  )
+  );
 }
