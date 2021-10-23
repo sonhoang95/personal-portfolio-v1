@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const containerVariants = {
   hidden: {
     opacity: 0,
-    y: 8,
+    y: 40,
   },
   visible: {
     opacity: 1,
