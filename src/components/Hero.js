@@ -53,7 +53,7 @@ export default function Hero() {
         <div className="space-y-4 mt-24 md:mt-16 lg:mt-6 lg:max-w-xl">
           <div className="mb-4">
             <motion.h1
-              initial={{ x: "-60vw" }}
+              initial={{ x: "-100vw" }}
               animate={{ x: 0 }}
               transition={{
                 type: "spring",
@@ -70,7 +70,7 @@ export default function Hero() {
             </motion.h1>
 
             <motion.p
-              initial={{ x: "-60vw" }}
+              initial={{ x: "-100vw" }}
               animate={{ x: 0 }}
               transition={{
                 type: "spring",
