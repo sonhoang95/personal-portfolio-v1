@@ -109,10 +109,10 @@ export default function Hero() {
               variants={childrenVariants}
               whileHover="hover"
               whileFocus="hover"
-              href="https://drive.google.com/file/d/1oLVol0WgbxHDZrLSF9y6d7XOfW0mWwxJ/view?usp=sharing"
+              href="https://docs.google.com/document/d/1-g5kxN21UVUKfSO8jC7WBjGERoQnAe_XJppqXK8A1lA/edit?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block py-2 px-3 lg:py-2 lg:px-4 bg-gradient-to-br 
+              className="inline-block py-2 px-3 lg:py-2 lg:px-4 bg-gradient-to-br
                 from-blue-400 to-blue-600 dark:from-teal-400 dark:to-teal-600 text-xs lg:text-sm rounded-lg text-white shadow font-semibold "
             >
               Download Resume
