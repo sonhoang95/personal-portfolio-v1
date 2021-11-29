@@ -1,14 +1,14 @@
-import React from "react"
-import { FaReact } from "react-icons/fa"
-import { SiTailwindcss } from "react-icons/si"
-import covid19tracker from "../images/covid19-demo-1.png"
+import React from 'react';
+import { FaReact } from 'react-icons/fa';
+import { SiTailwindcss } from 'react-icons/si';
+import covid19tracker from '../images/covid19-demo-1.png';
 
 export default function Covid19Tracker() {
   return (
-    <div className="space-y-10 mb-24">
+    <div className="space-y-10 mb-12 lg:mb-24">
       <div className="text-center space-x-4 capitalize">
         {/* <!-- heading --> */}
-        <h1 className="mb-8 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-wide">
+        <h1 className="mb-8 text-2xl md:text-5xl lg:text-6xl font-extrabold tracking-wide">
           <span
             className="
                 text-transparent
@@ -17,7 +17,7 @@ export default function Covid19Tracker() {
                 to-teal-500
               "
           >
-            {`<Covid-19`}{" "}
+            {`<Covid-19`}{' '}
           </span>
           <span
             className="
@@ -37,7 +37,7 @@ export default function Covid19Tracker() {
           text-sm lg:text-base
               inline-block
      mb-4 lg:mb-8
-        
+
              px-3 lg:px-5 py-1 lg:py-2
               rounded
               bg-gradient-to-br
@@ -48,8 +48,8 @@ export default function Covid19Tracker() {
               hover:text-white
               shadow
               hover:shadow-2xl
-          
-             
+
+
               tracking-wide
               transition-all
               duration-500"
@@ -64,7 +64,7 @@ export default function Covid19Tracker() {
           text-sm lg:text-base
               inline-block
      mb-4 lg:mb-8
-        
+
      px-3 lg:px-5 py-1 lg:py-2
               rounded
               bg-gradient-to-br
@@ -75,8 +75,8 @@ export default function Covid19Tracker() {
               hover:text-white
               shadow
               hover:shadow-2xl
-          
-             
+
+
               tracking-wide
               transition-all
               duration-500"
@@ -91,7 +91,7 @@ export default function Covid19Tracker() {
           text-sm lg:text-base
               inline-block
      mb-4 lg:mb-8
-        
+
      px-3 lg:px-5 py-1 lg:py-2
               rounded
               bg-gradient-to-br
@@ -102,8 +102,8 @@ export default function Covid19Tracker() {
               hover:text-white
               shadow
               hover:shadow-2xl
-          
-             
+
+
               tracking-wide
               transition-all
               duration-500"
@@ -132,7 +132,7 @@ export default function Covid19Tracker() {
                 text-left
                 py-4
                 px-8
-               
+
                 rounded
                 shadow-lg
                 text-yellow-800
@@ -147,5 +147,5 @@ export default function Covid19Tracker() {
         />
       </div>
     </div>
-  )
+  );
 }

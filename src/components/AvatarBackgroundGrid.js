@@ -1,5 +1,4 @@
-import React, { useEffect, useRef } from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useRef } from 'react';
 
 export default function AvatarBackgroundGrid() {
   const gridContainerRef = useRef();
@@ -26,10 +25,7 @@ export default function AvatarBackgroundGrid() {
   return (
     <div className="relative w-52 h-48 lg:mr-12">
       {/* <!--   grid background --> */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 5 }}
+      <div
         ref={gridContainerRef}
         className="absolute w-full h-full grid grid-cols-12 gap-2 transform -skew-y-6 scale-105 lg:scale-125"
       >
@@ -64,7 +60,7 @@ export default function AvatarBackgroundGrid() {
         <div className="col-span-4 bg-gray-200 rounded-full p-2 dark:bg-gray-800 animate-pulse"></div>
         <div className="col-span-7 bg-blue-300 rounded-full p-2 dark:bg-green-700 animate-pulse"></div>
         <div className=" col-span-1 bg-gray-200 rounded-full p-2 dark:bg-gray-800 animate-pulse"></div>
-      </motion.div>
+      </div>
 
       {/* <!--   content --> */}
     </div>

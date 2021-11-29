@@ -1,13 +1,13 @@
-import React from "react"
-import { FaReact, FaCss3Alt, FaStripe } from "react-icons/fa"
-import pluralgroceries from "../images/plural-demo.png"
+import React from 'react';
+import { FaReact, FaCss3Alt, FaStripe } from 'react-icons/fa';
+import pluralgroceries from '../images/plural-demo.png';
 
 export default function PluralGroceries() {
   return (
     <div className="space-y-10">
       <div className="text-center space-x-4 capitalize">
         {/* <!-- heading --> */}
-        <h1 className="mb-8 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-wide">
+        <h1 className="mb-8 text-2xl md:text-5xl lg:text-6xl font-extrabold tracking-wide">
           <span
             className="
                 text-transparent
@@ -36,7 +36,7 @@ export default function PluralGroceries() {
           text-sm lg:text-base
               inline-block
      mb-4 lg:mb-8
-        
+
              px-3 lg:px-5 py-1 lg:py-2
               rounded
               bg-gradient-to-br
@@ -47,8 +47,8 @@ export default function PluralGroceries() {
               hover:text-white
               shadow
               hover:shadow-2xl
-          
-             
+
+
               tracking-wide
               transition-all
               duration-500"
@@ -63,7 +63,7 @@ export default function PluralGroceries() {
           text-sm lg:text-base
               inline-block
      mb-4 lg:mb-8
-        
+
      px-3 lg:px-5 py-1 lg:py-2
               rounded
               bg-gradient-to-br
@@ -74,8 +74,8 @@ export default function PluralGroceries() {
               hover:text-white
               shadow
               hover:shadow-2xl
-          
-             
+
+
               tracking-wide
               transition-all
               duration-500"
@@ -90,7 +90,7 @@ export default function PluralGroceries() {
           text-sm lg:text-base
               inline-block
      mb-4 lg:mb-8
-        
+
      px-3 lg:px-5 py-1 lg:py-2
               rounded
               bg-gradient-to-br
@@ -101,8 +101,8 @@ export default function PluralGroceries() {
               hover:text-white
               shadow
               hover:shadow-2xl
-          
-             
+
+
               tracking-wide
               transition-all
               duration-500"
@@ -132,7 +132,7 @@ export default function PluralGroceries() {
                 text-left
                 py-4
                 px-8
-               
+
                 rounded
                 shadow-lg
                 text-yellow-800
@@ -148,5 +148,5 @@ export default function PluralGroceries() {
         />
       </div>
     </div>
-  )
+  );
 }

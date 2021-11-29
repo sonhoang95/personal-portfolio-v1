@@ -1,28 +1,27 @@
-import React, { useEffect } from "react";
-import Header from "../components/Header.js";
-import Hero from "../components/Hero.js";
-import Interests from "../components/Interests.js";
-import Skills from "../components/Skills.js";
-import Footer from "../components/Footer.js";
-import { motion } from "framer-motion";
+import React, { useEffect } from 'react';
+import Header from '../components/Header.js';
+import Hero from '../components/Hero.js';
+import Interests from '../components/Interests.js';
+import Skills from '../components/Skills.js';
+import Footer from '../components/Footer.js';
+import { motion } from 'framer-motion';
 
 const containerVariants = {
   hidden: {
     opacity: 0,
-    y: 40,
   },
   visible: {
     opacity: 1,
-    y: 0,
+
     transition: {
-      duration: 0.4,
+      duration: 0.5,
       ease: [0.61, 1, 0.88, 1],
     },
   },
   exit: {
-    x: "-100vw",
+    x: '-100vw',
     transition: {
-      ease: "easeInOut",
+      ease: 'easeInOut',
     },
   },
 };
@@ -30,7 +29,7 @@ const containerVariants = {
 export default function Home({ title }) {
   // Update page title on route change
   useEffect(() => {
-    document.title = title || "";
+    document.title = title || '';
   }, [title]);
 
   return (

@@ -1,11 +1,11 @@
-import React, { useState, useRef, useEffect } from "react";
-import { links } from "../data";
-import { NavLink, Link } from "react-router-dom";
-import { HiMenuAlt1, HiX } from "react-icons/hi";
-import { FiMoon, FiSun } from "react-icons/fi";
-import useDarkMode from "../utilities/useDarkMode";
-import avatar from "../images/avatar.jpeg";
-import { motion } from "framer-motion";
+import React, { useState, useRef, useEffect } from 'react';
+import { links } from '../data';
+import { NavLink, Link } from 'react-router-dom';
+import { HiMenuAlt1, HiX } from 'react-icons/hi';
+import { FiMoon, FiSun } from 'react-icons/fi';
+import useDarkMode from '../utilities/useDarkMode';
+import avatar from '../images/avatar.jpeg';
+import { motion } from 'framer-motion';
 
 const navVariants = {
   hidden: {
@@ -14,11 +14,11 @@ const navVariants = {
   visible: {
     y: 0,
     transition: {
-      duration: 2,
-      type: "spring",
+      duration: 0.5,
+      type: 'spring',
       stiffness: 50,
-      staggerChildren: 0.4,
-      when: "beforeChildren",
+      staggerChildren: 0.3,
+      when: 'beforeChildren',
     },
   },
 };
@@ -42,9 +42,9 @@ export default function Header() {
 
   useEffect(() => {
     if (isToggled) {
-      mobileMenuRef.current.classList.remove("hidden");
+      mobileMenuRef.current.classList.remove('hidden');
     } else {
-      mobileMenuRef.current.classList.add("hidden");
+      mobileMenuRef.current.classList.add('hidden');
     }
   }, [isToggled]);
 
@@ -74,11 +74,10 @@ export default function Header() {
               />
             </Link>
           </motion.div>
-
           {/* primary nav */}
           <ul className="items-center flex-grow hidden space-x-6 md:flex">
-            {links.map(link => (
-              <motion.li variants={childrenVariants}>
+            {links.map((link, index) => (
+              <motion.li key={index} variants={childrenVariants}>
                 <NavLink
                   exact
                   className="tracking-wider font-semibold hover:text-accent"
@@ -91,24 +90,18 @@ export default function Header() {
             ))}
           </ul>
           {/* toggle theme button */}
-          {isDark ? (
-            <span>
-              <FiSun
-                className="w-5 h-5 text-primary hover:text-accent transform hover:-translate-y-1 cursor-pointer transition-transform duration-200 hidden md:block"
-                onClick={() => setIsDark(!isDark)}
-              />
-            </span>
-          ) : (
-            <span>
-              <FiMoon
-                className="w-5 h-5 text-primary hover:text-accent transform hover:-translate-y-1 cursor-pointer transition-transform duration-200 hidden md:block"
-                onClick={() => setIsDark(!isDark)}
-              />
-            </span>
-          )}
+          <span
+            className="text-primary hover:text-accent transform hover:-translate-y-1 cursor-pointer transition-transform duration-200 hidden md:block"
+            onClick={() => setIsDark(!isDark)}
+          >
+            {isDark ? (
+              <FiSun className="w-5 h-5" />
+            ) : (
+              <FiMoon className="w-5 h-5" />
+            )}
+          </span>
 
           {/* mobile button */}
-
           <button
             onClick={handleToggleMobileMenu}
             className="focus:outline-none"
