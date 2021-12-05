@@ -1,23 +1,18 @@
-import React from "react"
-import { BiCodeAlt, BiBrushAlt } from "react-icons/bi"
-import { DiJavascript1 } from "react-icons/di"
+import React from 'react';
+import { BiCodeAlt, BiBrushAlt } from 'react-icons/bi';
+import { DiJavascript1 } from 'react-icons/di';
+import Dots from './Dots';
 
 export default function Interests() {
   return (
     <div className=" mt-16 lg:mt-32">
       <div className="flex flex-col lg:flex-row gap-4 items-center mb-8 lg:mb-12 text-center justify-center">
-        <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-red-500"></div>
-          <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
-          <div className="w-3 h-3 rounded-full bg-green-500"></div>
-        </div>
+        <Dots />
         <p className="uppercase tracking-widest font-black text-lg lg:text-xl border-b-4 text-gray-600  dark:border-gray-400 dark:text-gray-200">
           {`<Things I Love />`}
         </p>
         <div className="flex items-center gap-2">
-          <div className="hidden lg:block w-3 h-3 rounded-full bg-red-500"></div>
-          <div className="hidden lg:block w-3 h-3 rounded-full bg-yellow-500"></div>
-          <div className=" hidden lg:block w-3 h-3 rounded-full bg-green-500"></div>
+          <Dots />
         </div>
       </div>
       {/* Cards grid */}
@@ -31,10 +26,10 @@ export default function Interests() {
               Front-end
             </h2>
             <p className=" text-sm leading-relaxed text-gray-800 dark:text-gray-300">
-              My{" "}
+              My{' '}
               <strong className="italic text-red-400">
                 passion has always been for front-end development
-              </strong>{" "}
+              </strong>{' '}
               because it satisfies my need for creativity. It enabled me to
               easily put my ideas into digital form and get results back
               immediately.
@@ -54,7 +49,7 @@ export default function Interests() {
               <p className=" text-sm leading-relaxed text-gray-800 dark:text-gray-300">
                 <strong className="italic text-yellow-500 dark:text-yellow-400">
                   I extremely love JavaScript.
-                </strong>{" "}
+                </strong>{' '}
                 The feeling of learning something once and being able to use it
                 on different platforms is liberating. That is especially helpful
                 as being able to put things out in the real world is what
@@ -77,7 +72,7 @@ export default function Interests() {
                 I remember the first time I created an HTML page and opened it
                 in the browser.
                 <strong className="italic text-teal-500 dark:text-teal-400">
-                  {" "}
+                  {' '}
                   A whole new world of possibilities and creativity appeared
                   before my eyes
                 </strong>
@@ -88,5 +83,5 @@ export default function Interests() {
         </div>
       </div>
     </div>
-  )
+  );
 }

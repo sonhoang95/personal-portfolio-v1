@@ -1,11 +1,12 @@
-import React from 'react';
-import AvatarBackgroundGrid from './AvatarBackgroundGrid';
+import React, { Suspense, lazy } from 'react';
 import avatar from '../images/avatar.jpeg';
 import {
   AiOutlineGithub,
   AiOutlineCodepen,
   AiFillLinkedin,
 } from 'react-icons/ai';
+
+const AvatarBackgroundGrid = lazy(() => import('./AvatarBackgroundGrid'));
 
 export default function Hero() {
   return (
@@ -94,18 +95,20 @@ export default function Hero() {
         </div>
 
         <div className="relative">
-          <div aria-hidden={true}>
-            <AvatarBackgroundGrid />
-          </div>
-          <div className="absolute top-0 lg:right-6 flex items-center justify-center w-full h-full">
-            <div className="border-4 border-accent rounded-full p-2">
-              <img
-                src={avatar}
-                alt="personal avatar"
-                className="w-36 h-36 overflow-hidden rounded-full md:h-40 md:w-40 lg:h-44 lg:w-44"
-              />
+          <Suspense fallback={<div>Loading...</div>}>
+            <div aria-hidden={true}>
+              <AvatarBackgroundGrid />
             </div>
-          </div>
+            <div className="absolute top-0 lg:right-6 flex items-center justify-center w-full h-full">
+              <div className="border-4 border-accent rounded-full p-2">
+                <img
+                  src={avatar}
+                  alt="personal avatar"
+                  className="w-36 h-36 overflow-hidden rounded-full md:h-40 md:w-40 lg:h-44 lg:w-44"
+                />
+              </div>
+            </div>
+          </Suspense>
         </div>
       </div>
     </>

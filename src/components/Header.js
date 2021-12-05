@@ -116,6 +116,7 @@ export default function Header() {
         ref={mobileMenuRef}
       >
         <button
+          aria-label="Toggle Menu Button"
           onClick={handleToggleMobileMenu}
           className="md:hidden focus:outline-none"
         >
@@ -134,17 +135,13 @@ export default function Header() {
               </NavLink>
             </li>
           ))}
-          {isDark ? (
-            <FiSun
-              className="w-5 h-5 text-primary hover:text-accent transform hover:-translate-y-1 cursor-pointer transition-transform duration-200 "
-              onClick={() => setIsDark(!isDark)}
-            />
-          ) : (
-            <FiMoon
-              className="w-5 h-5 text-primary hover:text-accent transform hover:-translate-y-1 cursor-pointer transition-transform duration-200 "
-              onClick={() => setIsDark(!isDark)}
-            />
-          )}
+          <button
+            aria-label="Toggle Theme Button"
+            className="w-5 h-5 text-primary hover:text-accent transform hover:-translate-y-1 cursor-pointer transition-transform duration-200"
+            onClick={() => setIsDark(!isDark)}
+          >
+            {isDark ? <FiSun /> : <FiMoon />}
+          </button>
         </div>
       </div>
     </>
